@@ -9,9 +9,9 @@ jobs:
 
     steps:
       - run: |
-          echo ${{github.action_repository}}
-          echo ${{github.actor}}
-          echo ${{github.event}}
-          echo ${{github.repository}}
-          echo ${{github.repository_owner}}
-          echo ${{github.workflow_ref}}
+          echo "action_repository" ${{github.action_repository}}
+          echo "actor" ${{github.actor}}
+          echo "event" ${{github.event}}
+          echo "repository" ${{github.repository}}
+          echo "repository_owner" ${{github.repository_owner}}
+          echo "workflow_ref" ${{github.workflow_ref}}
