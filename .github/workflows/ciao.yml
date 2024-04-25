@@ -1,0 +1,17 @@
+name: Ciao
+
+on:
+  push:
+
+jobs:
+  come:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo ${{github.action_repository}}
+          echo ${{github.actor}}
+          echo ${{github.event}}
+          echo ${{github.repository}}
+          echo ${{github.repository_owner}}
+          echo ${{github.workflow_ref}}
